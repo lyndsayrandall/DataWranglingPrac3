@@ -1,0 +1,2 @@
+"0","chkLong <- accCombDF %>% filter(is.na(Longitude) |!(between(Longitude,VICLATLONG[[3]], VICLATLONG[[4]])))"
+"0","dispHead((chkLong))"

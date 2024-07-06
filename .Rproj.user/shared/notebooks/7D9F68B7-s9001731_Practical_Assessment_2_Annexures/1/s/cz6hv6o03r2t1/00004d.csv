@@ -1,0 +1,3 @@
+"0","matrixDF4[,21:30] %>% kable(caption = glue(""Table of Sums of NA,NAN, and Inf for {names(chkDF4)} cols 21 to 30""),"
+"0","                    longtable = TRUE,format = ""latex"", booktabs = TRUE) %>%"
+"0","              kable_styling(font_size = 6)"

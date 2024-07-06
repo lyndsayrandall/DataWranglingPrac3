@@ -1,0 +1,30 @@
+"0","csvFileNames <- list.files(""../../Data"",pattern = ""*.csv"", full.names = TRUE)"
+"0","fullFileNames <- list.files(""../../Data"", full.names = TRUE)"
+"0",""
+"0","for (file in fullFileNames) {"
+"0","  cat(paste(""-\t"", file,""\n""))"
+"0","}"
+"1","-	 ../../Data/ACCIDENT.csv 
+"
+"1","-	 ../../Data/ACCIDENT_EVENT.csv 
+"
+"1","-	 ../../Data/ACCIDENT_LOCATION.csv 
+"
+"1","-	 ../../Data/ATMOSPHERIC_COND.csv 
+"
+"1","-	 ../../Data/NODE.csv 
+"
+"1","-	 ../../Data/PERSON.csv 
+"
+"1","-	 ../../Data/ROAD_SURFACE_COND.csv 
+"
+"1","-	 ../../Data/SUB_DCA.csv 
+"
+"1","-	 ../../Data/VEHICLE.csv 
+"
+"1","-	 ../../Data/VICTORIAN_ROAD_CRASH_DATA.geojson 
+"
+"0","#Create data frames fro csv files"
+"0","vicRoadsDFList <- sapply(csvFileNames, read.csv)"
+"0","#Change Key of list to mor HR form"
+"0","names(vicRoadsDFList) <- c(gsub(""../../Data/"","""", names(vicRoadsDFList)))"

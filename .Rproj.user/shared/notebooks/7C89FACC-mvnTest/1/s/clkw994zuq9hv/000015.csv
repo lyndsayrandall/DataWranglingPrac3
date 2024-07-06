@@ -1,0 +1,4 @@
+"0","timeEndTest6 <- Sys.time()"
+"0","timetaken6 <- difftime(timeEndTest6,timeStartTest6, units = ""secs"")"
+"0","cat(glue('colorplot test secs: {timetaken6}'))"
+"1","colorplot test secs: 4.41008687019348"

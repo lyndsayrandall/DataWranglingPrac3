@@ -1,0 +1,4 @@
+"0","timeEndTest1 <- Sys.time()"
+"0","timetaken1 <- difftime(timeEndTest1,timeStartTest1, units = ""secs"")"
+"0","cat(glue('10,000 test secs: {timetaken1}'))"
+"1","10,000 test secs: 10.1854281425476"

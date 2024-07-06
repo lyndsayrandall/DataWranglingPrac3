@@ -1,0 +1,6 @@
+"0","vehYearMean <- round(mean(accCombDF$Veh_Year, na.rm = TRUE),digits = 0)"
+"0","accCombDF %<>% mutate(Veh_Year = case_when(!(between(Veh_Year,1908,as.numeric(format(Sys.Date(),""%Y""))))"
+"0","                                          ~ vehYearMean,"
+"0","                                          TRUE ~ Veh_Year))"
+"0","chkCyl1 <- accCombDF %>% filter(!(Cylinders >= 1 & Cylinders <= 12)) "
+"0","dispHead(chkCyl1) # Best done by brute force intuition."

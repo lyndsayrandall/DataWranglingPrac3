@@ -1,0 +1,2 @@
+"0","timeStartTest7 <- Sys.time()"
+"0","testchisq <- chisq.plot(testDF, quan = 0.5, ask = FALSE)"

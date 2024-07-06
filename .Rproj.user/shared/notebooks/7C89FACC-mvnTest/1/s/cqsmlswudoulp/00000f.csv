@@ -1,0 +1,3 @@
+"0","ss20000 <- testDF[1:20000,]"
+"0","timeStartTest2 <- Sys.time()"
+"0","mvnQQplot <- mvn(data = ss20000, multivariateOutlierMethod = ""quan"", showOutliers = TRUE)"

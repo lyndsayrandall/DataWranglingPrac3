@@ -1,0 +1,23 @@
+"0","posnOfDF <- 1"
+"0","cat(""These files have duplicated accident number keys in the data frame:"")"
+"1","These files have duplicated accident number keys in the data frame:"
+"0","for (tmpDF in vicRoadsDFList) {"
+"0","  if (n_distinct(tmpDF$ACCIDENT_NO) < dim(tmpDF)[[1]]) {"
+"0","    cat(paste(""-\t"",names(vicRoadsDFList)[[posnOfDF]],""\n""))"
+"0","  }"
+"0","  posnOfDF <- posnOfDF + 1"
+"0","}"
+"1","-	 ACCIDENT_EVENT.csv 
+"
+"1","-	 ATMOSPHERIC_COND.csv 
+"
+"1","-	 NODE.csv 
+"
+"1","-	 PERSON.csv 
+"
+"1","-	 ROAD_SURFACE_COND.csv 
+"
+"1","-	 SUB_DCA.csv 
+"
+"1","-	 VEHICLE.csv 
+"

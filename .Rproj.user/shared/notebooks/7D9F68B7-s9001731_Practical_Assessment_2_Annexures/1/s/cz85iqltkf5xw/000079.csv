@@ -1,0 +1,53 @@
+"0","#unique(chkCyl2$Veh_Type)"
+"0","accCombDF %<>% mutate(Cylinders = case_when((str_detect(Veh_Type,""Prime|Heavy|Truck"") & "
+"0","                                                            is.na(Cylinders)) ~ 8,"
+"0","                                             str_detect(Veh_Type, ""Train|Tram|Horse|Parked"") "
+"0","                                                                              ~ 0,"
+"0","                                            (str_detect(Veh_Type, ""Car|Taxi|Light"") &"
+"0","                                                            is.na(Cylinders)) ~ 4,"
+"0","                                            (str_detect(Veh_Type, ""Panel|Station|Utility|Other"") &"
+"0","                                                            is.na(Cylinders)) ~ 6,"
+"0","                                            (str_detect(Veh_Type, ""Bus|Plant"") &"
+"0","                                                            is.na(Cylinders)) ~ 6,"
+"0","                                            (str_detect(Veh_Type, ""Moped|Cycle|Scooter|Quad"") &"
+"0","                                                            is.na(Cylinders)) ~ 2,"
+"0","                                            (str_detect(Veh_Type, ""Car|Not|"") &"
+"0","                                                            is.na(Cylinders)) ~ 4,"
+"0","                                            TRUE ~ Cylinders"
+"0","                                           ))"
+"0","#Age Group showing 0 NA not checked. Would show NA as factor."
+"0","# Next temporal attributes show no na, nan if check for range"
+"0","chkDateChar <- accCombDF %>% filter(!(between(Date_char, ymd(""2012-01-01""),now()))) "
+"0","dispHead(chkDateChar)"
+"1","chkDateChar is empty.
+"
+"1","NULL
+"
+"0","ChkTimeChar <- accCombDF %>% filter(!(between(hour(Time_char),0,24)))"
+"0","dispHead(ChkTimeChar)"
+"1","ChkTimeChar is empty.
+"
+"1","NULL
+"
+"0","#Timestamp created as local Melbourne"
+"0","chkTimestamp <- accCombDF %>% filter(!(between(Timestamp, ymd_hms(""2011-12-31 24:00:0"","
+"0","                                                                  tz  = ""Australia/Melbourne""),now()))) "
+"0","dispHead(chkTimestamp)"
+"1","chkTimestamp is empty.
+"
+"1","NULL
+"
+"0","chkDay <- accCombDF %>% filter(!(Full_Day %in% dayLabelsLevels ))"
+"0","dispHead((chkDay))"
+"1","(chkDay) is empty.
+"
+"1","NULL
+"
+"0","chkTMFLoat <- accCombDF %>% filter(!(between(Time_Float,0.00, 24.00)))"
+"0","dispHead((chkTMFLoat))"
+"1","(chkTMFLoat) is empty.
+"
+"1","NULL
+"
+"0","chkLGAName <- accCombDF %>% filter(!(LGA_Name %in% str_to_upper(namesLGAVic )))"
+"0","dispHead((chkLGAName))"

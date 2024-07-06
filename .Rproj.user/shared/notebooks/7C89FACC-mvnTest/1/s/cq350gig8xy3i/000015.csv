@@ -1,0 +1,4 @@
+"0","timeEndTest7 <- Sys.time()"
+"0","timetaken7 <- difftime(timeEndTest7,timeStartTest7, units = ""secs"")"
+"0","cat(glue('chisqplot test secs: {timetaken7}'))"
+"1","chisqplot test secs: 2.72568702697754"

@@ -1,0 +1,6 @@
+"0","missId <- setdiff(unique(accPerson$ACCIDENT_NO), unique(accNode$ACCIDENT_NO))"
+"0","numMissing <- length(missId)"
+"0",""
+"0","missingAccNo <- accCombDF %>%"
+"0","                filter(Id %in% missId)"
+"0","rm(matrixDF6,accDateTimeDay,accNode,accPerson, accVehicle,chkDF6)"

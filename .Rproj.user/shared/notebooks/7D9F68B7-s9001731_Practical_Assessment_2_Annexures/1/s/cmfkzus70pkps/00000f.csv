@@ -1,0 +1,4 @@
+"0","councilsVic_sf <- read_sf(""../../Councils/georef-australia-local-government-area.geojson"") %>% "
+"0","                  filter (ste_name == ""Victoria"")"
+"0","namesLGAVic <- unique(councilsVic_sf$lga_name) %>%"
+"0","               append(., ""Merri-bek"")"

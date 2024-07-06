@@ -1,0 +1,4 @@
+"0","df[,6:9] %>% "
+"0","          kable(caption = ""Attributes Files 5-9"",longtable = TRUE,"
+"0","                format = ""latex"", booktabs = TRUE) %>%"
+"0","          kable_styling(font_size = 5) "

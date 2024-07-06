@@ -1,0 +1,4 @@
+"0","timeEndTest5 <- Sys.time()"
+"0","timetaken5 <- difftime(timeEndTest5,timeStartTest5, units = ""secs"")"
+"0","cat(glue('DDplot test secs: {timetaken5}'))"
+"1","DDplot test secs: 4.57400298118591"

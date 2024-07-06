@@ -1,0 +1,10 @@
+"0","accCombDF %<>% filter(accCombDF$Gender %in% c(""M"",""F""))"
+"0","chkDvr <- accCombDF %>% filter(!`Dvr/Cyclist` %in% c(""Drivers"",""Motorcyclists""))"
+"0","dispHead(chkDvr)"
+"1","chkDvr is empty.
+"
+"1","NULL
+"
+"0","chkVehYear <- accCombDF %>% filter(!(between(Veh_Year,1908,as.numeric(format(Sys.Date(),""%Y"")))))"
+"0",""
+"0","dispHead(chkVehYear) # Replace with the mean easy to impute. But if time brute force."

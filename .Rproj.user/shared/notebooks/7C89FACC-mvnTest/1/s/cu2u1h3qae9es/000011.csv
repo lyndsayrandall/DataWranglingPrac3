@@ -1,0 +1,2 @@
+"0","testIris <- iris[, 1:2]"
+"0","mvnQQplot1 <- mvn(data = testIris, multivariateOutlierMethod = ""quan"", showOutliers = TRUE)"

@@ -1,0 +1,3 @@
+"0","timeEndTest1 <- Sys.time()"
+"0","cat(difftime(timeEndTest1,timeStartTest1, units = ""secs""))"
+"1","10.11997"

@@ -1,0 +1,24 @@
+"0","accCombDF %<>% mutate(Dist_GPO = log10(Dist_GPO))"
+"0","histDist2 <- ggplot(accCombDF,aes(x = Dist_GPO, y = after_stat(density))) +"
+"0","            geom_histogram( binwidth = 0.05) +"
+"0","            geom_density(colour = ""green"", linewidth = 0.3) +"
+"0","            ggtitle(""Histogram Distance to GPO"") + "
+"0","            scale_x_continuous(name = ""Distance Kms"",labels = function(x) x/1000 )  +"
+"0","            theme( axis.title.y = element_text(angle = 0, vjust = 0.5, size =6)) + "
+"0","            theme( axis.title.x = element_text(angle = 0, vjust = 0.5, size =6)) +"
+"0","            theme(plot.title = element_text(size = 6)) +"
+"0","            theme(axis.text.y = element_text(face = ""bold"", colour = ""blue"",angle = 90,size=6)) +"
+"0","            theme(axis.text.x = element_text(face = ""bold"", colour = ""blue"",angle =45,size=6))"
+"0","figure2 <- grid.arrange(histDist, histDist2, nrow = 1 , ncol = 2)"
+"2","Warning:"
+"2"," [38;5;232mRemoved 144 rows containing non-finite outside the scale range (`stat_bin()`).[39m
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 144 rows containing non-finite outside the scale range (`stat_density()`).[39m
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 144 rows containing non-finite outside the scale range (`stat_bin()`).[39m
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 144 rows containing non-finite outside the scale range (`stat_density()`).[39m
+"

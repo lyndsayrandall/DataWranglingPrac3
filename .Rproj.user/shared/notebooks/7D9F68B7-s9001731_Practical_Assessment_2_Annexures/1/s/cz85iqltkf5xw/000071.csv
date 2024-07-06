@@ -1,0 +1,9 @@
+"0",""
+"0","chkId <- accCombDF %>% filter(!str_detect(accCombDF$Id,""^T2"")) "
+"0","dispHead(chkId)"
+"1","chkId is empty.
+"
+"1","NULL
+"
+"0","chkGender <- accCombDF %>% filter(!accCombDF$Gender %in% c(""M"",""F""))"
+"0","dispHead(chkGender)  # 1.93 percent so deleted "
